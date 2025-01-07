@@ -4,7 +4,8 @@
   packages = [ pkgs.jq pkgs.git ];
 
   env = {
-    SCEP_CHALLENGE = "monimentormdm";
+    # SCEP_CHALLENGE = "monimentormdm";
+    SCEP_CHALLENGE_URL = "http://my.localhost.com/v1/challenge";
   };
 
   scripts = {
@@ -13,7 +14,7 @@
    '';
 
    serve.exec = ''
-    ./scepserver-darwin-arm64 -allowrenew 0 -challenge $SCEP_CHALLENGE -debug -port 7048
+    ./scepserver-darwin-arm64 -allowrenew 0 -debug -port 7048
    '';
   };
 
