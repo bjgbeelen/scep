@@ -5,7 +5,7 @@
 
   env = {
     # SCEP_CHALLENGE = "monimentormdm";
-    SCEP_CHALLENGE_URL = "http://my.localhost.com/v1/challenge";
+    SCEP_CHALLENGE_URL = "http://my.localhost.com/v1/device/challenge";
   };
 
   scripts = {
