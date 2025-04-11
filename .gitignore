@@ -1,2 +1,6 @@
 scepserver-*
 scepclient-*
+depot/
+.direnv
+.devenv
+.devenv.flake.nix
