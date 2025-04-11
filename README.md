@@ -47,11 +47,12 @@ Minimal example for both server and client.
 
 The default flags configure and run the scep server.
 
-`-depot` must be the path to a folder with `ca.pem` and `ca.key` files.  If you don't already have a CA to use, you can create one using the `ca` subcommand.
+`-depot` must be the path to a folder with `ca.pem` and `ca.key` files. If you don't already have a CA to use, you can create one using the `ca` subcommand.
 
 The scepserver provides one HTTP endpoint, `/scep`, that facilitates the normal PKIOperation/Message parameters.
 
 Server usage:
+
 ```sh
 $ ./scepserver-linux-amd64 -help
   -allowrenew string
@@ -82,6 +83,7 @@ type <command> --help to see usage for each subcommand
 Use the `ca -init` subcommand to create a new CA and private key.
 
 CA sub-command usage:
+
 ```
 $ ./scepserver-linux-amd64 ca -help
 Usage of ca:

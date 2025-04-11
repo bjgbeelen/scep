@@ -1,9 +1,10 @@
 FROM alpine:3
 
-COPY ./scepclient-linux-amd64 /usr/bin/scepclient
+ARG GIT_SHA
+
 COPY ./scepserver-linux-amd64 /usr/bin/scepserver
 
-EXPOSE 8080
+EXPOSE 9001
 
 VOLUME ["/depot"]
 
